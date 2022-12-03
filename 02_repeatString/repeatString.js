@@ -1,8 +1,5 @@
 const repeatString = function(string, repetitions) {
-    let result;
-for (repetitions) {
-    result += string;
-}
+return (string.repeat(repetitions));
 };
 
 // Do not edit below this line
