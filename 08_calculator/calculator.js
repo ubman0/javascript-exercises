@@ -9,13 +9,17 @@ const subtract = function(x, y) {
 const sum = function(x) {
 	let total = 0;
   for (let num in x){
-    total += num;
+    total += x[num];
   }
   return total;
 };
 
-const multiply = function() {
-
+const multiply = function(x, y) {
+  let res = 0;
+  for (let num in x){
+    res *= x[num];
+  }
+  return res;
 };
 
 const power = function() {
