@@ -1,7 +1,6 @@
 const palindromes = function (x) {
-    x.toLowerCase();
-    const punctuation = ["!", "?", " "];
-    x.replace(punctuation, "")
+    const punctuation = ["!", "?", ",", "."];
+    x = x.toLowerCase().replace(/[^a-z]/g, "");
     return x.split("").reverse().join("") == x;
 };
 
