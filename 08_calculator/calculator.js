@@ -15,9 +15,9 @@ const sum = function(x) {
 };
 
 const multiply = function(numbers) {
-  var multTotal = numbers.reduce((total, number) => {
-    return multTotal * number;
-  },0);
+  total = numbers[0];
+  for (let i = 1; i < numbers.length; i++) total *= numbers[i];
+  return total;
 };
 
 const power = function(x, y) {
